@@ -1,0 +1,8 @@
+<h2>Users <a href="">(+)</a></h2>
+<ul>
+  {% for user in users %}
+  <li>
+    <a href="{% url 'artist_detail' pk=artist.pk %}">{{ user.name }}</a>
+  </li>
+  {% endfor %}
+</ul>
