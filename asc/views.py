@@ -1,9 +1,9 @@
 from django.shortcuts import render
-from .models import render
+from .models import User, Post
 
 # Create your views here.
 def user_list(req):
-    users = Artist.objects.all()
+    users = User.objects.all()
     return render(req, 'asc/user_list.html', {'users': users})
 
 def user_detail(req, pk):
