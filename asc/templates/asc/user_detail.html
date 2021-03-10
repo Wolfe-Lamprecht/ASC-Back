@@ -1,14 +1,18 @@
+{% extends 'tunr/base.html' %} {% block content %}
+
 <h2>{{ user.username }} <a href="">(edit)</a></h2>
 <h4>{{ user.status }}</h4>
 
-<img src="{{ user.photo_url }}" alt="" class="artist-photo" />
+<img src={% url 'picture' pk=user.pk %} alt="" class="artist-photo" />
 
 <h5>{{ user.bio }}</h5>
 <h3>Posts <a href="">(+)</a></h3>
 <ul>
   {% for post in user.posts.all %}
   <li>
-    <a href="">{{ post.title }}</a>
+    <a href={% url 'post_detail' pk=post.pk %}></a>{{ post.title }}</a>
   </li>
   {% endfor %}
 </ul>
+
+{% endblock %}
