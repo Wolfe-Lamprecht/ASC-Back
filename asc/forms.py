@@ -1,7 +1,7 @@
 from django import forms
 from .models import User, Post
 
-class UserForm(forms.UserForm):
+class UserForm(forms.ModelForm):
 
     class Meta:
         model = User
@@ -14,4 +14,14 @@ class UserForm(forms.UserForm):
             'bio',
             'status',
             'picture',
+        )
+
+class PostForm(forms.ModelForm):
+
+    class Meta:
+        model = Post
+        fields = (
+            'title',
+            'author',
+            'body'
         )

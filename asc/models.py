@@ -9,7 +9,7 @@ class User(models.Model):
     password = models.CharField(max_length=30)
     bio = models.TextField()
     status = models.CharField(max_length=100)
-    picture = models.ImageField()
+    picture = models.ImageField(upload_to='asc_django/profile_pics')
 
     def __str__(self):
         return self.username
