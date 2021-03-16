@@ -83,10 +83,10 @@ WSGI_APPLICATION = 'asc_django.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'afterschoolclub',
-        'USER': 'ascuser',
-        'PASSWORD': 'asc',
-        'HOST': 'localhost',
+        'NAME': 'debtfcp08dnedv',
+        'USER': 'hmjtjvuimroywl',
+        'PASSWORD': 'af9162cbb21e73b5b73cb22503e236ec27bc56ee2da64d7525463f2da05f7f47',
+        'HOST': 'ec2-54-159-175-113.compute-1.amazonaws.com',
     }
 }
 
