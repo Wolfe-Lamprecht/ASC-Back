@@ -1,1 +1,1 @@
-web: gunicorn asc.wsgi
+web: gunicorn asc_django.wsgi
